@@ -1,0 +1,11 @@
+2023/08/17-17:55:55.403 3b00 Reusing MANIFEST C:\Users\NossoERP\Documents\WhastappApi\API\.wwebjs_auth\session-bot-nosso\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/17-17:55:55.405 3b00 Recovering log #5270
+2023/08/17-17:55:55.411 3b00 Reusing old log C:\Users\NossoERP\Documents\WhastappApi\API\.wwebjs_auth\session-bot-nosso\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/005270.log 
+2023/08/17-17:55:56.093 3b00 Compacting 1@0 + 1@1 files
+2023/08/17-17:55:56.104 3b00 Generated table #5273@0: 12941 keys, 208211 bytes
+2023/08/17-17:55:56.112 3b00 Generated table #5274@0: 3555 keys, 128443 bytes
+2023/08/17-17:55:56.114 3b00 Generated table #5275@0: 256 keys, 5493 bytes
+2023/08/17-17:55:56.114 3b00 Compacted 1@0 + 1@1 files => 342147 bytes
+2023/08/17-17:55:56.114 3b00 compacted to: files[ 0 3 36 0 0 0 0 ]
+2023/08/17-17:55:56.115 3b00 Delete type=2 #5248
+2023/08/17-17:55:56.115 3b00 Delete type=2 #5271

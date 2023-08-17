@@ -1,0 +1,37 @@
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.exe
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.deps.json
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.runtimeconfig.json
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.dll
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.pdb
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.AssemblyInfoInputs.cache
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.AssemblyInfo.cs
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.csproj.CoreCompileInputs.cache
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.dll
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\refint\ConsumingApi.dll
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.pdb
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.genruntimeconfig.cache
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ref\ConsumingApi.dll
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingAPI\ConsumingApi\bin\Debug\net6.0\System.Reactive.dll
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingAPI\ConsumingApi\bin\Debug\net6.0\System.Reactive.Windows.Forms.dll
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingAPI\ConsumingApi\obj\Debug\net6.0\ConsumingApi.csproj.AssemblyReference.cache
+C:\Users\NossoERP\Documents\Projeto C#\ConsumingAPI\ConsumingApi\obj\Debug\net6.0\ConsumingApi.csproj.CopyComplete
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.exe
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.deps.json
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.runtimeconfig.json
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.dll
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\ConsumingApi.pdb
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\System.Reactive.dll
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\System.Reactive.Windows.Forms.dll
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\bin\Debug\net6.0\System.Windows.Forms.Ribbon35.dll
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.csproj.AssemblyReference.cache
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.AssemblyInfoInputs.cache
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.AssemblyInfo.cs
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.csproj.CoreCompileInputs.cache
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.csproj.CopyComplete
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.dll
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\refint\ConsumingApi.dll
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.pdb
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ConsumingApi.genruntimeconfig.cache
+C:\Users\NossoERP\Documents\WhastappApi\ConsumingApi\ConsumingApi\obj\Debug\net6.0\ref\ConsumingApi.dll

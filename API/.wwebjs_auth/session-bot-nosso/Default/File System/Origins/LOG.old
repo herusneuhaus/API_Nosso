@@ -1,0 +1,5 @@
+2023/08/17-11:53:45.585 45e0 Creating DB C:\Users\NossoERP\Documents\WhastappApi\API\.wwebjs_auth\session-bot-nosso\Default\File System\Origins since it was missing.
+2023/08/17-11:53:45.590 45e0 Reusing MANIFEST C:\Users\NossoERP\Documents\WhastappApi\API\.wwebjs_auth\session-bot-nosso\Default\File System\Origins/MANIFEST-000001
+2023/08/17-11:53:45.590 45e0 Recovering log #3
+2023/08/17-11:53:45.591 45e0 Reusing old log C:\Users\NossoERP\Documents\WhastappApi\API\.wwebjs_auth\session-bot-nosso\Default\File System\Origins/000003.log 
+2023/08/17-11:53:45.591 45e0 Delete type=2 #4
