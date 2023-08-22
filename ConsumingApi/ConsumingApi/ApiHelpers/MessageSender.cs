@@ -16,7 +16,7 @@ namespace ConsumingAPI.ApiHelpers
 
         public async Task<string> SendMessageAsync(string number, string message)
         {
-            string apiUrl = "http://localhost:8000/send-message";
+            string apiUrl = "http://localhost:8001/send-message";
 
             var content = new StringContent(
                 $"{{\"number\": \"{number}\", \"message\": \"{message}\"}}",

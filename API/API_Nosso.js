@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const io = socketIO(server);
 
 // PORTA ONDE O SERVIÇO SERÁ INICIADO
-const port = 8000;
+const port = 8001;
 const idClient = "bot-nosso";
 
 // SERVIÇO EXPRESS
@@ -40,9 +40,10 @@ const client = new Client({
   authStrategy: new LocalAuth({ clientId: idClient }),
   puppeteer: {
     headless: true,
+    executablePath: '/usr/bin/chromium-browser',
     // CAMINHO DO CHROME PARA WINDOWS (REMOVER O COMENTÁRIO ABAIXO)
-    executablePath:
-      "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    // executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+
     //===================================================================================
     // CAMINHO DO CHROME PARA MAC (REMOVER O COMENTÁRIO ABAIXO)
     //executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',

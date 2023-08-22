@@ -1,7 +1,7 @@
 {
-  "name": "bot-zdg",
+  "name": "bot-nosso",
   "version": "1.0.0",
-  "description": "bot-zdg: based on WWebJS API",
+  "description": "bot-nosso: based on WWebJS API",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -12,7 +12,7 @@
     "whatsapp-api",
     "node.js"
   ],
-  "author": "Pedro",
+  "author": "Herus",
   "license": "MIT",
   "dependencies": {
     "@google-cloud/dialogflow": "^4.6.0",

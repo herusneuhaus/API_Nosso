@@ -15,7 +15,7 @@ namespace ConsumingAPI.ApiHelpers
 
         public async Task<string> SendMediaAsync(string number, string caption, string file)
         {
-            string apiUrl = "http://localhost:8000/send-media";
+            string apiUrl = "http://localhost:8001/send-media";
 
             var content = new FormUrlEncodedContent(new Dictionary<string, string>
             {
