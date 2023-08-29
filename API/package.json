@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "start:dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -24,9 +23,7 @@
     "express-validator": "^6.9.2",
     "http": "0.0.1-security",
     "mime-types": "^2.1.32",
-    "mysql2": "^2.3.3",
     "node-cron": "^3.0.2",
-    "openai": "^3.2.1",
     "pb-util": "^1.0.3",
     "qrcode": "^1.4.4",
     "socket.io": "2.3.0",
@@ -34,6 +31,6 @@
     "whatsapp-web.js": "^1.22.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+
   }
 }

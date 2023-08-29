@@ -3,16 +3,14 @@
 const { Client, LocalAuth, MessageMedia } = require("whatsapp-web.js");
 const express = require("express");
 const { body, validationResult } = require("express-validator");
-const socketIO = require("socket.io");
 const qrcode = require("qrcode");
 const http = require("http");
 const fileUpload = require("express-fileupload");
 const app = express();
 const server = http.createServer(app);
-const io = socketIO(server);
 
 // PORTA ONDE O SERVIÇO SERÁ INICIADO
-const port = 8001;
+const port = 8003;
 const idClient = "bot-nosso";
 
 // SERVIÇO EXPRESS
@@ -29,21 +27,19 @@ app.use(
 );
 app.use("/", express.static(__dirname + "/"));
 
-app.get("/", (req, res) => {
-  res.sendFile("index.html", {
-    root: __dirname,
-  });
-});
+//app.get("/", (req, res) => {
+//  res.sendFile("index.html", {
+//    root: __dirname,
+//  });
+//});
 
 // PARÂMETROS DO CLIENT DO WPP
 const client = new Client({
   authStrategy: new LocalAuth({ clientId: idClient }),
   puppeteer: {
     headless: true,
-    executablePath: '/usr/bin/chromium-browser',
     // CAMINHO DO CHROME PARA WINDOWS (REMOVER O COMENTÁRIO ABAIXO)
-    // executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-
+    executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     //===================================================================================
     // CAMINHO DO CHROME PARA MAC (REMOVER O COMENTÁRIO ABAIXO)
     //executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
@@ -67,52 +63,50 @@ const client = new Client({
 // INITIALIZE DO CLIENT DO WPP
 client.initialize();
 
-// EVENTOS DE CONEXÃO EXPORTADOS PARA O INDEX.HTML VIA SOCKET
-io.on("connection", function (socket) {
-  socket.emit("message", "© BOT-NOSSO - Iniciado");
-  socket.emit("qr", "./icon.svg");
 
-  client.on("qr", (qr) => {
-    console.log("QR RECEIVED", qr);
-    qrcode.toDataURL(qr, (err, url) => {
-      socket.emit("qr", url);
-      socket.emit(
-        "message",
-        "© BOT-NOSSO QRCode recebido, aponte a câmera  seu celular!"
-      );
+app.get("/waitForQRCode", async (req, res) => {
+  try {
+    // Função para aguardar o evento "qrcode"
+    const qrCodeValue = await new Promise((resolve) => {
+      client.once("qr", (qrCodeValue) => {
+        console.log("QR RECEIVED", qrCodeValue);
+        resolve(qrCodeValue);
+      });
     });
-  });
 
-  client.on("ready", () => {
-    socket.emit("ready", "© BOT-NOSSO Dispositivo pronto!");
-    socket.emit("message", "© BOT-NOSSO Dispositivo pronto!");
-    socket.emit("qr", "./check.svg");
-    console.log("© BOT-NOSSO Dispositivo pronto");
-  });
+    // Função para gerar a imagem do QR Code em formato base64
+    const generateQRCodeBase64 = async (qrCodeValue) => {
+      return new Promise((resolve, reject) => {
+        qrcode.toDataURL(qrCodeValue, (err, qrCodeBase64) => {
+          if (err) {
+            console.error(err);
+            reject(err);
+          }
+          resolve(qrCodeBase64);
+        });
+      });
+    };
 
-  client.on("authenticated", () => {
-    socket.emit("authenticated", "© BOT-NOSSO Autenticado!");
-    socket.emit("message", "© BOT-NOSSO Autenticado!");
-    console.log("© BOT-NOSSO Autenticado");
-  });
+    // Gerar a imagem do QR Code em formato base64
+    const qrCodeBase64 = await generateQRCodeBase64(qrCodeValue);
 
-  client.on("auth_failure", function () {
-    socket.emit("message", "© BOT-NOSSO Falha na autenticação, reiniciando...");
-    console.error("© BOT-NOSSO Falha na autenticação");
-  });
+    // Enviar o conteúdo base64 como resposta
+    res.send(qrCodeBase64);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Erro ao gerar o QR Code");
+  }
+});
 
-  client.on("change_state", (state) => {
-    console.log("© BOT-NOSSO Status de conexão: ", state);
-  });
 
-  client.on("disconnected", (reason) => {
-    socket.emit("message", "© BOT-NOSSO Cliente desconectado!");
-    console.log("© BOT-NOSSO Cliente desconectado", reason);
-    client.initialize();
-  });
+ 
+
+app.listen(8000, () => {
+  console.log("Server is running on port 8003");
 });
 
 // POST PARA ENVIO DE MENSAGEM
+
 app.post(
   "/send-message",
   [body("number").notEmpty(), body("message").notEmpty()],
@@ -219,10 +213,11 @@ app.post(
 );
 
 // POST PARA ENVIO DE MIDIA VIA URL
+
 app.post("/send-media", async (req, res) => {
   const number = req.body.number.replace(/\D/g, "");
   const caption = req.body.caption;
-  const fileUrl = req.body.file;
+  const fileUrl = req.body.fileUrl;
   const numberDDI = number.substring(0, 2);
   const numberDDD = number.substring(2, 4);
   const numberUser = number.substring(number.length - 8);
@@ -316,3 +311,4 @@ app.post("/send-media", async (req, res) => {
 server.listen(port, function () {
   console.log("© Comunidade NOSSO - Aplicativo rodando na porta *: " + port);
 });
+("");
