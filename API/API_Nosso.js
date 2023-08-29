@@ -27,12 +27,6 @@ app.use(
 );
 app.use("/", express.static(__dirname + "/"));
 
-//app.get("/", (req, res) => {
-//  res.sendFile("index.html", {
-//    root: __dirname,
-//  });
-//});
-
 // PARÂMETROS DO CLIENT DO WPP
 const client = new Client({
   authStrategy: new LocalAuth({ clientId: idClient }),
