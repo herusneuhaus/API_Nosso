@@ -81,9 +81,6 @@ app.get("/waitForQRCode", async (req, res) => {
       });
     };
 
-    // Gerar a imagem do QR Code em formato base64
-    const qrCodeBase64 = await generateQRCodeBase64(qrCodeValue);
-
     // Enviar o conteúdo base64 como resposta
     res.send(qrCodeBase64);
   } catch (error) {
